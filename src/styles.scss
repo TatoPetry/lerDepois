@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.form-container {
+   width: 60vw;
+  
+}
+.grid100 {
+    width: 100% !important;
+}
+.grid75 {
+    width: 75% !important;
+
+}
+.grid50 {
+    width: 50% !important;
+
+}
+.grid25 {
+    width: 25% !important;
+
+}
+.row {
+   min-width: 100% !important;
+   display: flex;
+   justify-content: flex-start; 
+   flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+    .grid100 {
+        width: 100% !important;
+    }
+    .grid75 {
+        width: 100% !important;
+    
+    }
+    .grid50 {
+        width: 100% !important;
+    
+    }
+    .grid25 {
+        width: 100% !important;
+    
+    }
+}
+
+.mat-list-item-content {
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+<div class="form-container">
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="row">
+    
+    <mat-form-field class="grid100" appearance="outline">       
+            <mat-label>Nome do Artigo</mat-label>
+            <input matInput formControlName="name"
+                   type="text">       
+    </mat-form-field>
+    
+    
+    <mat-form-field class="grid100" appearance="outline">       
+       
+        <mat-label>Link para Artigo</mat-label>
+        <input matInput formControlName="link"
+               type="text">    
+    </mat-form-field> 
+
+    <button type="submit" class="grid50" mat-raised-button color="primary">Cadastrar</button>
+    
+</form>
+
+</div>

@@ -1,0 +1,12 @@
+<mat-list role="list">
+    <mat-list-item class="row" role="list-item" *ngFor="let item of items">
+        <a class="" mat-button href="http://{{item.link}}" color="primary">{{item.name}}</a>
+        <div class="buttons-container">
+            <mat-slide-toggle  [checked]="item.isReady" (click)="isReadyFn(item)" color="primary">          
+            </mat-slide-toggle>
+            <button mat-icon-button (click)="deleteItem(item.id)" color="">
+                <mat-icon  class="cancel" color="">cancel</mat-icon>
+            </button>
+        </div>         
+    </mat-list-item>
+</mat-list>
